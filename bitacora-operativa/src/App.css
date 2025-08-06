@@ -1,0 +1,86 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 1rem;
+  background-color: #C2C2C2;
+}
+
+.bitacora-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bitacora-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 400;
+  padding-left: 1rem;
+  padding-top: 2rem;
+}
+
+.bitacora-section p {
+  margin-bottom: 1rem;
+  color: #7C7C7C;
+}
+
+.title{
+  color: #1A1A1A !important;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.bitacora-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.bitacora-table th,
+.bitacora-table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.bitacora-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.bitacora-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.bitacora-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bitacora-table {
+    font-size: 0.9rem;
+  }
+  
+  .bitacora-table th,
+  .bitacora-table td {
+    padding: 0.3rem;
+  }
+}

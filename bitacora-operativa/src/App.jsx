@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header.jsx';
+import FlexGrid from './components/Table.jsx';
 
 function App() {
   return (
@@ -13,31 +14,7 @@ function App() {
           <p>Primer turno</p>
           
           <div className="table-container">
-            <table className="bitacora-table">
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>Falla</th>
-                  <th>Despr. tamenta</th>
-                  <th>Reportado por</th>
-                  <th>Fecha del reporte</th>
-                  <th>Completado</th>
-                  <th>Validado</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                {/* Additional rows would go here */}
-              </tbody>
-            </table>
+            <FlexGrid />              
           </div>
         </section>
       </main>

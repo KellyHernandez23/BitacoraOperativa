@@ -9,11 +9,11 @@ const StyledGridOverlay = styled('div')(({ theme }) => ({
   alignItems: 'center',
   justifyContent: 'center',
   height: '100%',
-  backgroundColor: '#363636',
+  borderRadius:'3rem',
   '& .no-rows-primary': {
     fill: '#3D4751',
     ...theme.applyStyles('light', {
-      fill: '#AEB8C2 ',
+      fill: '#AEB8C2',
     }),
   },
   '& .no-rows-secondary': {
@@ -52,7 +52,7 @@ function CustomNoRowsOverlay() {
           d="M0 10C0 4.477 4.477 0 10 0h380c5.523 0 10 4.477 10 10s-4.477 10-10 10H10C4.477 20 0 15.523 0 10ZM0 59c0-5.523 4.477-10 10-10h231c5.523 0 10 4.477 10 10s-4.477 10-10 10H10C4.477 69 0 64.523 0 59ZM0 106c0-5.523 4.477-10 10-10h203c5.523 0 10 4.477 10 10s-4.477 10-10 10H10c-5.523 0-10-4.477-10-10ZM0 153c0-5.523 4.477-10 10-10h195.5c5.523 0 10 4.477 10 10s-4.477 10-10 10H10c-5.523 0-10-4.477-10-10ZM0 200c0-5.523 4.477-10 10-10h203c5.523 0 10 4.477 10 10s-4.477 10-10 10H10c-5.523 0-10-4.477-10-10ZM0 247c0-5.523 4.477-10 10-10h231c5.523 0 10 4.477 10 10s-4.477 10-10 10H10c-5.523 0-10-4.477-10-10Z"
         />
       </svg>
-      <Box sx={{ mt: 2, color: '#AEB8C2' }}>No rows</Box>
+      <Box sx={{ mt: 2 }}>No rows</Box>
     </StyledGridOverlay>
   );
 }
@@ -64,7 +64,10 @@ export default function GridOverlayHeight() {
         columns={[{ field: 'ID' }, { field: 'Falla' }, { field: 'Departamento' }, {field: 'Reportado por'}, {field:'Fecha del reporte'}, {field:'Completado'},{field: 'Validado'}]}
         rows={[]}
         slots={{ noRowsOverlay: CustomNoRowsOverlay }}
-        sx={{ '--DataGrid-overlayHeight': '300px', backgroundColor: '#2c2c2c'}}
+        sx={{ '--DataGrid-overlayHeight': '300px',
+            borderRadius: '1rem',
+            overflow: 'hidden', 
+         }}
       />
     </Box>
   );

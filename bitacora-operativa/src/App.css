@@ -16,7 +16,7 @@
 .main-content {
   flex: 1;
   padding: 1rem;
-  background-color: #C2C2C2;
+  background-color: #e3e3e3;
 }
 
 .bitacora-section {
@@ -29,7 +29,6 @@
   margin-bottom: 0.5rem;
   color: #2c3e50;
   font-weight: 400;
-  padding-left: 1rem;
   padding-top: 2rem;
 }
 
